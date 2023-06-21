@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ENTER</title>
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.click').click(function(){
+          $('.popup_box').css("display", "block");
+        });
+        $('.btn1').click(function(){
+          $('.popup_box').css("display", "none");
+        });
+        $('.btn2').click(function(){
+          $('.popup_box').css("display", "none");
+          alert("Press F11 for better experience.");
+        });
+      });
+
+    </script>
+
+  </head>
+  <body>
+    <a href="#" class="click">Enter</a>
+    <div class="popup_box">
+      <i class="fas fa-exclamation"></i>
+      <h1>This website is for school project only</h1>
+      <label>Inspired by the design of Daily Tuition</label>
+      <div class="btns">
+        <a href="#" class="btn1">Cancel </a>
+        <a href="Index.html" class="btn2">Proceed</a>
+      </div>
+    </div>
+  </body>
+</html>
